@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Wedding</title>
+					<!-- Normalize -->
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+					<!-- Font awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+					<!-- Google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Quicksand|Tangerine" rel="stylesheet">
+					<!-- Moji stilovi -->
+    <link href="style-wedding.css" rel="stylesheet">
+    				<!-- Moje skripte -->
+</head>
+<body>
+	<header id="home">
+																		<!-- Navigation -->
+		<nav>
+			<ul>
+  				<li><a href="#home">Home</a></li>
+  				<li class="navigation"><a href="#jane&john">Jane & John</a></li>
+  				<li class="navigation"><a href="#wedding">Wedding</a></li>
+  				<li class="navigation"><a href="#rsvp">RSVP</a></li>
+			</ul>
+		</nav>
+		<section class="background-img1">
+			<aside class="center-text">
+				<h1>Jane & John</h1>
+				<h3>Are getting married</h3>
+				<p><strong>17.07.2017</strong></p>
+			</aside>
+		</section>
+	</header>
+		<main id="jane&john">
+			<article class="wedding">
+				<h2>Jane & John</h2>
+				<img src="IMG/img2.jpg" alt="Wedding cake...">
+				<p>A wedding is a ceremony where two people are united in marriage. Wedding traditions and customs vary greatly between cultures, ethnic groups, religions, countries, and social classes. Most wedding ceremonies involve an exchange of marriage vows by the couple, presentation of a gift (offering, rings, symbolic item, flowers, money), and a public proclamation of marriage by an authority figure or celebrant. Special wedding garments are often worn, and the ceremony is sometimes followed by a wedding reception. Music, poetry, prayers or readings from religious texts or literature are also commonly incorporated into the ceremony.</p>
+				<button><a href="#wedding"> Wedding Details</a></button>
+			</article>
+
+			<section class="background-img2">
+				<aside class="center-text">
+					<h1>You Are Invited</h1>
+					<h3>Of Course</h3>
+				</aside>
+			</section>
+
+			<article class="place" id="wedding">
+				<h2>The Wedding</h2>
+				<img src="IMG/img4.jpeg" alt="Place of wedding....">
+				<section class="grid-container">
+					<aside class="grid-item">
+						<h3>When</h3>
+						<p>Wedding Ceremony - 2:00pm</p>
+						<p>Reception & Dinner - 5:00pm</p>
+					</aside>
+					<aside class="grid-item">
+						<h3>Where</h3>
+						<p>Some place, an address</p>
+						<p>Some where, some address</p>
+					</aside>
+				</section>
+			</article>
+
+			<section class="rsvp" id="rsvp">
+				<h1>Hope You Can Make It!</h1>
+				<h3>Kindly Respond By December, 2018</h3>
+				<button onclick="document.getElementById('response').style.display='block'">RSVP</button>
+
+			</section>
+				<article id="response" class="modal">
+					<section class="modal-content">
+						<h1>Can You Come?</h1>
+						<p>We really hope you can make it.</p>
+						<input type="text" name="name" placeholder="Name(s)">
+						<p>Sincerely, John & Jane</p>
+						<section class="modal-btn">
+							<button onclick="document.getElementById('response').style.display='none'" class="btn">Going</button>
+							<button onclick="document.getElementById('response').style.display='none'" class="btn">Can't Come</button>
+						</section>
+					</section>
+				</article>
+		</main>
+																		<!-- Footer -->
+		<footer>
+			&copy; Copyright Jovana Protic
+		</footer>
+		<aside class="nav-footer"></aside>
+																		<!-- Modal js -->
+		<script>
+		// Get the modal
+		var modal = document.getElementById('response');
+
+		// Get the button that opens the modal
+		var btn = document.getElementById("myBtn");
+
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
+
+		// When the user clicks the button, open the modal 
+		btn.onclick = function() {
+		    modal.style.display = "block";
+		}
+
+		// When the user clicks on <span> (x), close the modal
+		span.onclick = function() {
+		    modal.style.display = "none";
+		}
+
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function(event) {
+		    if (event.target == modal) {
+		        modal.style.display = "none";
+		    }
+		}
+		</script>
+</body>
+</html>
